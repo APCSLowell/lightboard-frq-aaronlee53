@@ -48,11 +48,14 @@ public class LightBoard
     String s = "";
     for (int r = 0; r < lights.length; r++)
     {
-      for (int c = 0; c < lights[0].length; c++)
-        if (lights[r][c])
+      for (int c = 0; c < lights[0].length; c++) {
+        if (lights[r][c]) {
           s += "*";
-        else
+        }
+        else {
           s += ".";
+        }
+      }
       s += "\n";
     }
     return s;
