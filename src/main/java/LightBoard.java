@@ -13,7 +13,7 @@ public class LightBoard
     lights = new boolean [numRows][numCols];
     for (int r = 0; r<numRows; r++){
       for (int c = 0; c<numCols; c++){
-        lights [r][c] = (double) Math.random() < 0.4;
+        lights [r][c] = Math.random() < 0.4;
       }
     }
   }
